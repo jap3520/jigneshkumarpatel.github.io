@@ -1,0 +1,101 @@
+/* Basic Page Setup */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #f8f8f8;
+  color: #222;
+}
+
+/* Header and Navigation */
+header {
+  background-color: #004aad;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Main Sections */
+main {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 6px;
+}
+
+h2 {
+  color: #004aad;
+  border-bottom: 2px solid #004aad;
+  padding-bottom: 5px;
+}
+
+/* Image */
+img {
+  display: block;
+  margin: 0 auto 15px auto;
+  border-radius: 50%;
+}
+
+/* Table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: left;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  background-color: #004aad;
+  color: white;
+  padding: 10px;
+  margin-top: 30px;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  nav li {
+    display: block;
+    margin: 8px 0;
+  }
+
+  body {
+    font-size: 16px;
+  }
+}
+<section class="skills-list">
+  <h2>Skills</h2>
+  <ul>
+    <li>HTML</li>
+    <li>CSS</li>
+    <li>JavaScript</li>
+    <li>Python</li>
+    <li>GitHub</li>
+  </ul>
+</section>
