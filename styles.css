@@ -1,31 +1,36 @@
-/* Basic Page Setup */
+/* General Styles */
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
   margin: 0;
-  background-color: #f8f8f8;
-  color: #222;
+  padding: 0;
+  background-color: #f5f5f5;
+  color: #333;
 }
 
-/* Header and Navigation */
 header {
-  background-color: #004aad;
-  color: white;
+  background-color: #004080;
+  color: #fff;
+  padding: 20px 0;
   text-align: center;
-  padding: 20px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2em;
 }
 
 nav ul {
-  list-style-type: none;
+  list-style: none;
   padding: 0;
-}
-
-nav li {
-  display: inline-block;
-  margin: 0 10px;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
 }
 
 nav a {
-  color: white;
+  color: #fff;
   text-decoration: none;
   font-weight: bold;
 }
@@ -34,33 +39,29 @@ nav a:hover {
   text-decoration: underline;
 }
 
-/* Main Sections */
+/* Main Content */
 main {
   max-width: 900px;
-  margin: 20px auto;
-  padding: 20px;
-  background-color: white;
-  border-radius: 6px;
+  margin: 30px auto;
+  padding: 0 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
+/* Section Titles */
 h2 {
-  color: #004aad;
-  border-bottom: 2px solid #004aad;
+  color: #004080;
+  border-bottom: 2px solid #004080;
   padding-bottom: 5px;
+  margin-top: 30px;
 }
 
-/* Image */
-img {
-  display: block;
-  margin: 0 auto 15px auto;
-  border-radius: 50%;
-}
-
-/* Table */
+/* Tables */
 table {
   width: 100%;
   border-collapse: collapse;
-  margin-top: 15px;
+  margin: 15px 0;
 }
 
 th, td {
@@ -69,33 +70,69 @@ th, td {
   text-align: left;
 }
 
+th {
+  background-color: #004080;
+  color: #fff;
+}
+
+/* Lists */
+ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+ul ul {
+  list-style-type: circle;
+  padding-left: 20px;
+}
+
+/* Links */
+a {
+  color: #004080;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
 /* Footer */
 footer {
   text-align: center;
-  background-color: #004aad;
-  color: white;
-  padding: 10px;
+  padding: 15px 0;
   margin-top: 30px;
+  background-color: #e0e0e0;
+  color: #333;
+  font-size: 0.9em;
 }
 
-/* Responsive Design */
+/* Responsive Images */
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Highlight Key Skills */
+.skills-highlight {
+  font-weight: bold;
+  color: #004080;
+}
+
+/* Projects & Achievements Lists */
+#projects ul, #achievements ul, #certifications ul {
+  padding-left: 20px;
+}
+
+/* Technical Projects Nested Lists */
+#certifications ul ul {
+  padding-left: 15px;
+  margin-top: 5px;
+}
+
+/* Mobile Friendly */
 @media (max-width: 600px) {
-  nav li {
-    display: block;
-    margin: 8px 0;
-  }
-
-  body {
-    font-size: 16px;
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
   }
 }
-<section class="skills-list">
-  <h2>Skills</h2>
-  <ul>
-    <li>HTML</li>
-    <li>CSS</li>
-    <li>JavaScript</li>
-    <li>Python</li>
-    <li>GitHub</li>
-  </ul>
-</section>
